@@ -1,0 +1,26 @@
+{
+  "name": "claude-code-agents",
+  "version": "0.1.0",
+  "owner": {
+    "name": "young"
+  },
+  "plugins": [
+    {
+      "name": "react-code-standards",
+      "description": "TypeScript/React code standards enforcement with review, generation, and refactoring",
+      "version": "0.1.0",
+      "author": {
+        "name": "young"
+      },
+      "homepage": "https://github.com/vainjs/claude-code-agents",
+      "repository": "https://github.com/vainjs/claude-code-agents.git",
+      "license": "MIT",
+      "keywords": ["react", "typescript", "standards", "code-review", "refactoring"],
+      "category": "code-quality",
+      "source": "./plugins/react",
+      "strict": false,
+      "agents": ["./agents/code-std.md"],
+      "commands": ["./commands/generate.md", "./commands/review.md", "./commands/refactor.md"]
+    }
+  ]
+}
